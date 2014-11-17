@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetUniver.SqlClient</name>
+    </assembly>
+    <members>
+        <member name="T:Starsoft.NetUniver.SqlClient.Delimiters">
+            <summary>
+            表示分隔符定义
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.ColumnOpen">
+            <summary>
+            列打开分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.ColumnClose">
+            <summary>
+            列关闭分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.Param">
+            <summary>
+            参数前缀符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.StoredProcNameOpen">
+            <summary>
+            存储过程打开分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.StoredProcNameClose">
+            <summary>
+            存储过程关闭分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.StringOpen">
+            <summary>
+            字符打开分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.StringClose">
+            <summary>
+            字符关闭分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.TableOpen">
+            <summary>
+            表打开分隔符
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.Delimiters.TableClose">
+            <summary>
+            表关闭分隔符
+            </summary>
+        </member>
+        <member name="T:Starsoft.NetUniver.SqlClient.SqlClientProvider">
+            <summary>
+            Microsoft SQL Server Provider
+            </summary>
+        </member>
+        <member name="F:Starsoft.NetUniver.SqlClient.SqlClientProvider.ProviderName">
+            <summary>
+            提供者名称
+            </summary>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildQuerySql(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            根据动态查询对象构建Sql查询语句
+            </summary>
+            <param name="query">动态查询对象</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildInsertSql(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            根据动态查询对象构建Sql插入语句
+            </summary>
+            <param name="query">动态查询对象</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildInsertSql(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@,Starsoft.NetUniver.Core.Query.QueryItem,System.Data.SqlClient.SqlParameter@)">
+            <summary>
+            构建插入语句
+            </summary>
+            <param name="query">动态查询对象</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <param name="identityColumn">标识列</param>
+            <param name="identityPara">表示列输出参数</param>
+            <returns>构建的sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildUpdateSql(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建更新语句
+            </summary>
+            <param name="query"></param>
+            <param name="cmd"></param>
+            <param name="pindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildDeleteSql(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建删除语句
+            </summary>
+            <param name="query">动态查询对象</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetSelectStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建Select表达式
+            </summary>
+            <param name="query">动态查询对象</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的sql语句的Select部分，不包含'Select'</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetExpressionColumn(Starsoft.NetUniver.Core.Query.QueryExpression,System.Boolean,System.Boolean)">
+            <summary>
+            构建表达式语句
+            </summary>
+            <param name="expression">表达式</param>
+            <param name="inExpression">是否在表达式内部调用</param>
+            <param name="useAlias">是否使用别名</param>
+            <returns>查询表达式sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetMathmaticalExpressionColumn(Starsoft.NetUniver.Core.Query.MathmaticalExpression)">
+            <summary>
+            构建算术表达式的sql语句，比如加法、减法、乘法、除法等操作的表达式
+            </summary>
+            <param name="mathmaticalExpression">数学表达式</param>
+            <returns>sql语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.ArithmeticOperatorToString(Starsoft.NetUniver.Core.Query.ArithmeticOperator)">
+            <summary>
+            将枚举算术操作转换为对应的符号
+            </summary>
+            <param name="arithmeticOperator">算术操作类型</param>
+            <returns>算术操作符号</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.BuildSubOperationsSql(System.String,System.Collections.Generic.List{Starsoft.NetUniver.Core.Query.QuerySubOperator})">
+            <summary>
+            构建子操作SQL语句
+            </summary>
+            <param name="columnName">列名</param>
+            <param name="subOperators">子操作集合</param>
+            <returns>子操作SQL语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetCastSql(Starsoft.NetUniver.Core.Query.CastType)">
+            <summary>
+            得到转换后的目标数据类型字符串
+            </summary>
+            <param name="castType">要转换的数据类型</param>
+            <returns>目标数据类型字符串</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetMathmaticalExpressionLiteralType(Starsoft.NetUniver.Core.Query.MathmaticalExpression)">
+            <summary>
+            将原始数据值转换为sql语句字符串
+            </summary>
+            <param name="mathmaticalExpression">数学表达式</param>
+            <returns>sql语句字符串</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetColumnName(Starsoft.NetUniver.Core.Query.ColumnItem)">
+            <summary>
+            构建查询列在sql语句中表现的列名
+            </summary>
+            <param name="column">查询列</param>
+            <returns>查询列在sql语句中表现的列名</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetFromStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建From子句部分
+            </summary>
+            <param name="query">动态查询</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的From子句部分，不包含From</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetJoinStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建Join子句部分
+            </summary>
+            <param name="query">动态查询</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的Join子句部分</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetUpdateStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Collections.Generic.List{Starsoft.NetUniver.Core.Query.UpdateExpression},System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="updateExpressions"></param>
+            <param name="cmd"></param>
+            <param name="pindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetComparisonStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Collections.Generic.List{Starsoft.NetUniver.Core.Query.Comparison},System.String,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建的条件子句部分
+            </summary>
+            <param name="query">动态查询</param>
+            <param name="comparisonItems">条件项集合</param>
+            <param name="prefix">条件前缀</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>构建的条件子句部分的sql</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetSubquerySearchCondition(Starsoft.NetUniver.Core.Query.DynamicQuery)">
+            <summary>
+            取得子查询语句（ALL，ANY，SOME）
+            </summary>
+            <param name="query">动态查询</param>
+            <returns>子查询语句（ALL，ANY，SOME）</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.ApplyWhereSubOperations(Starsoft.NetUniver.Core.Query.Comparison.ComparisonData)">
+            <summary>
+            构建Where子操作语句
+            </summary>
+            <param name="comparisonData">比较语句数据</param>
+            <returns>Where子操作语句</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetGroupByStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建Group By子句部分
+            </summary>
+            <param name="query">动态查询</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>Group By子句部分Sql</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.GetOrderByStatement(Starsoft.NetUniver.Core.Query.DynamicQuery,System.Data.SqlClient.SqlCommand,System.Int32@)">
+            <summary>
+            构建Order By子句部分
+            </summary>
+            <param name="query">动态查询</param>
+            <param name="cmd">命令对象</param>
+            <param name="pindex">命令参数索引</param>
+            <returns>Order By子句部分Sql</returns>
+        </member>
+        <member name="M:Starsoft.NetUniver.SqlClient.SqlClientProvider.CreateFullName(Starsoft.NetUniver.Core.Query.DynamicQuery)">
+            <summary>
+            取得动态查询的全名
+            </summary>
+            <param name="query">动态查询</param>
+            <returns>动态查询的全名</returns>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.SqlClientProvider.Catalog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Starsoft.NetUniver.SqlClient.SqlClientProvider.Schema">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

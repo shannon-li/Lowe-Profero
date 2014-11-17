@@ -1,0 +1,6 @@
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\bin\Debug\SC.Business.dll
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\bin\Debug\SC.Business.pdb
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\bin\Debug\NetUniver.Core.dll
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\bin\Debug\NetUniver.Core.xml
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\obj\Debug\SC.Business.dll
+E:\Github\SC.WebSite\SC.WebSite\SC.Business\obj\Debug\SC.Business.pdb
