@@ -33,9 +33,6 @@
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Library\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Starsoft.Web">
-      <HintPath>..\Library\Starsoft.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />

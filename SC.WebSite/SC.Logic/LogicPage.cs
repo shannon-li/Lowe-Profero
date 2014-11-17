@@ -7,12 +7,24 @@ using System.Threading.Tasks;
 
 namespace SC.Logic
 {
-    public class LogicPage : Starsoft.Web.Page
+    public class LogicPage : System.Web.UI.Page
     {
         protected override void OnInit(EventArgs e)
         {
-           
+          
         }
+
+        /// <summary>
+        /// 在未使用服务器FORM时,替代了ISPOSTBACK
+        /// </summary>
+        public virtual bool IsPost
+        {
+            get
+            {
+                return (base.Request.HttpMethod == "POST");
+            }
+        }
+
 
         #region SEO 属性
         /// <summary>
