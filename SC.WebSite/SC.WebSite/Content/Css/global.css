@@ -1,0 +1,453 @@
+﻿* { margin: 0; padding: 0; }
+body { min-height: 100%; font: 12px/1.5 'TisaSansOT', Helvetica, sans-serif; }
+
+@media (max-width: 960px) {
+    body { overflow-y: scroll; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; }
+}
+
+.profero { height: 100%; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; position: relative; }
+.profero .offcanvas-menu-overlay,
+.profero .offcanvas-menu-overlay-black { left: 100%; top: 71px; bottom: 0px; right: 0px; -webkit-transition: left ease-in-out 0.3s; -moz-transition: left ease-in-out 0.3s; -o-transition: left ease-in-out 0.3s; -ms-transition: left ease-in-out 0.3s; transition: left ease-in-out 0.3s; background-color: rgba(255,255,255,0); }
+.profero .offcanvas-menu-overlay.active,
+.profero .offcanvas-menu-overlay-black.active { background-color: rgba(255,255,255,0.8); display: block; -webkit-transition: left ease-in-out 0.3s; -moz-transition: left ease-in-out 0.3s; -o-transition: left ease-in-out 0.3s; -ms-transition: left ease-in-out 0.3s; transition: left ease-in-out 0.3s; position: fixed; top: 71px; bottom: 0pc; right: 0px; left: 0pc; z-index: 11; }
+.profero .offcanvas-menu-overlay-black { background-color: rgba(0,0,0,0); }
+.profero .offcanvas-menu-overlay-black.active { background-color: rgba(0,0,0,0.667); }
+.profero .kit-font-grey { color: #454545; }
+.profero .kit-font-light-grey { color: #a7a7a7; }
+.profero .kit-font-8 { font-size: 8px; }
+.profero .kit-font-9 { font-size: 9px; }
+.profero .kit-font-10 { font-size: 10px; }
+.profero .kit-font-11 { font-size: 11px; }
+.profero .kit-font-12 { font-size: 12px; }
+.profero .kit-font-13 { font-size: 13px; }
+.profero .kit-font-14 { font-size: 14px; }
+.profero .kit-font-15 { font-size: 15px; }
+.profero .kit-font-16 { font-size: 16px; }
+.profero .kit-font-17 { font-size: 17px; }
+.profero .kit-font-18 { font-size: 18px; }
+.profero .kit-font-19 { font-size: 19px; }
+.profero .kit-font-20 { font-size: 20px; }
+.profero .kit-font-21 { font-size: 21px; }
+.profero .kit-font-22 { font-size: 22px; }
+.profero .kit-font-23 { font-size: 23px; }
+.profero .kit-font-24 { font-size: 24px; }
+.profero .kit-font-25 { font-size: 25px; }
+.profero .kit-font-26 { font-size: 26px; }
+.profero .kit-font-27 { font-size: 27px; }
+.profero .kit-font-28 { font-size: 28px; }
+.profero .kit-font-29 { font-size: 29px; }
+.profero .kit-font-30 { font-size: 30px; }
+.profero .kit-font-31 { font-size: 31px; }
+.profero .kit-font-32 { font-size: 32px; }
+.profero .kit-font-33 { font-size: 33px; }
+.profero .kit-font-34 { font-size: 34px; }
+.profero .kit-font-35 { font-size: 35px; }
+.profero .kit-font-36 { font-size: 36px; }
+.profero .kit-font-37 { font-size: 37px; }
+.profero .kit-font-38 { font-size: 38px; }
+.profero .kit-font-39 { font-size: 39px; }
+.profero .kit-font-40 { font-size: 40px; }
+.profero .kit-font-41 { font-size: 41px; }
+.profero .kit-font-42 { font-size: 42px; }
+.profero .kit-font-43 { font-size: 43px; }
+.profero .kit-font-44 { font-size: 44px; }
+.profero .kit-font-45 { font-size: 45px; }
+.profero .kit-font-46 { font-size: 46px; }
+.profero .kit-font-47 { font-size: 47px; }
+.profero .kit-font-48 { font-size: 48px; }
+.profero .kit-font-49 { font-size: 49px; }
+.profero .kit-font-50 { font-size: 50px; }
+.profero .kit-left-menu-elem { cursor: pointer; -webkit-box-shadow: 0px 0px 6px 1px #e7e7e7; box-shadow: 0px 0px 6px 1px #e7e7e7; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: solid 1px #e7e7e7; }
+.profero .kit-left-menu-elem .highlight { color: #ffdb28; }
+.profero .kit-left-menu-elem .menu-title,
+.profero .kit-left-menu-elem a.link-title { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; text-align: left; height: 35px; font-size: 18px; line-height: 35px; text-indent: 10px; padding-right: 10px; padding-left: 5px; }
+.profero .kit-left-menu-elem .menu-title.drop,
+.profero .kit-left-menu-elem a.link-title.drop { background-image: url("../img/icons/drop-down-black.png"); background-repeat: no-repeat no-repeat; background-position: 95% center; }
+.profero .kit-left-menu-elem a.link-title { padding-left: 20px; }
+.profero .kit-left-menu-elem .link-grid { display: none; }
+.profero .kit-left-menu-elem .link-grid a.kit-font-light-grey { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; padding: 5px 0; padding-left: 20px; display: block; }
+.profero .kit-left-menu-elem .link-grid a.kit-font-light-grey:hover { color: #666; text-decoration: none; }
+.profero .kit-left-menu-elem .link-grid.show { display: block; }
+.profero .kit-left-menu-elem.selected { padding-bottom: 5px; }
+.profero .kit-left-menu-elem.selected .menu-title { background-image: url("../img/icons/drop-up-black.png"); background-repeat: no-repeat no-repeat; background-position: 95% center; }
+.profero h1.kit-main-title { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; color: #000; }
+.profero h2.kit-title-2 { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; color: #000; }
+.profero form.kit-form label { line-height: 40px; font-size: 16px; font-style: normal; color: #141414; margin-bottom: 10px; cursor: pointer; display: block; }
+.profero form.kit-form label .error { display: inline-block; line-height: 40px; font-size: 16px; float: right; color: #ee898a; display: none; }
+.profero form.kit-form label .error.show { display: inline-block; }
+.profero form.kit-form input[type="text"],
+.profero form.kit-form textarea { border: solid 1px #ccc; display: block; width: 100%; color: #aaa; padding-left: 10px; height: 30px; padding: 4px 6px; margin-bottom: 10px; font-size: 14px; line-height: 20px; color: #555; vertical-align: middle; -webkit-border-radius: 4px; border-radius: 4px; margin-bottom: 10px; }
+.profero form.kit-form input[type="text"].error,
+.profero form.kit-form textarea.error { border-color: #ee898a; }
+.profero form.kit-form textarea { height: 222px; }
+.profero form.kit-form .form-bottom { text-align: right; }
+.profero form.kit-form .form-bottom button.send { font-family: 'TisaSansOT-Italic', sans-serif; font-weight: normal; font-style: normal; width: 170px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; background-image: url("../img/bottom_shadow_new.jpg"); display: inline-block; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0px 0px 10px #aaa; box-shadow: 0px 0px 10px #aaa; height: 37px; cursor: pointer; line-height: 37px; overflow: none; color: #404040; font-size: 15px; padding-right: 30px; text-align: left; border: none; border: 1px solid #ccc; }
+.profero .navigation-bar { line-height: 55px; -webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.467); box-shadow: 0px 1px 6px rgba(0,0,0,0.467); width: 100%; height: 72px; background-color: #fff; margin: 0 0; display: inline-block; border: 1px solid #e7e7e7; position: fixed; top: 0; left: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 10; -webkit-transition: all ease-in-out 0.2s; -moz-transition: all ease-in-out 0.2s; -o-transition: all ease-in-out 0.2s; -ms-transition: all ease-in-out 0.2s; transition: all ease-in-out 0.2s; }
+.profero .navigation-bar .logo { display: inline-block; position: absolute; left: 15px; top: 5px; }
+.profero .navigation-bar .nav-location-out { display: none; position: fixed; height: 100%; width: 100%; top: 0; left: 0; z-index: 2; }
+.profero .navigation-bar .nav-location-out.active { display: block; }
+.profero .navigation-bar .location-dropdown { width: 126px; height: 29px; line-height: 29px; position: absolute; top: 20px; left: 88px; text-indent: 10px; background-image: url("../img/arrow.gif"); background-repeat: no-repeat; background-position: 90% center; cursor: pointer; z-index: 10; text-align: left; -webkit-box-shadow: 2px 2px 6px #e7e7e7; box-shadow: 2px 2px 6px #e7e7e7; border: 1px solid #e0e0e0; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content { position: relative; height: 28px; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location { font-family: 'TisaSansOT-BoldItalic', sans-serif; font-weight: bold; font-style: normal; font-size: 14px; line-height: 28px; height: 28px; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub-top-arrow { display: none; position: absolute; top: 35px; height: 10px; width: 120px; z-index: 3; background: transparent url("../img/icons/navbar-sub-top-arrow.png") no-repeat no-repeat 10px bottom; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub { z-index: 2; display: none; position: absolute; top: 44px; left: -1px; border: 1px solid #e0e0e0; background-color: #fff; width: 126px; color: #808080; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block { border-bottom: 1px solid #e0e0e0; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block:last-child { border-bottom: none; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block .location-name { font-family: 'TisaSansOT-Italic', sans-serif; font-weight: normal; font-style: normal; font-weight: bold; font-size: 14px; line-height: 46px; height: 46px; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block .sub-location-block { display: none; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block .sub-location-block a { display: block; text-decoration: none; font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; padding: 5px 0; color: #000; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block .sub-location-block a:first-child { padding-top: 0px; }
+.profero .navigation-bar .location-dropdown .location-dropdown-content .location-dropdown-sub .location-block.active { color: #000; }
+.profero .navigation-bar .mobile-title { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; line-height: 70px; text-align: center; outline: none; color: #000; display: inline-block; width: 100%; font-size: 18px; }
+
+@media (max-width: 980px) {
+    .profero .navigation-bar .mobile-title { font-size: 28px; }
+}
+
+@media (max-width: 768px) {
+    .profero .navigation-bar .mobile-title { font-size: 18px; }
+}
+
+.profero .navigation-bar .links { padding-top: 7px; line-height: 55px; }
+.profero .navigation-bar .links ul { text-align: center; }
+.profero .navigation-bar .links ul li { list-style-type: none; display: inline-block; }
+.profero .navigation-bar .links ul li a { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; font-size: 18px; text-decoration: none; outline: none; color: #000; display: inline-block; padding: 0 17px; }
+.profero .navigation-bar .links ul li a:hover { color: #808080; }
+.profero .navigation-bar .links ul li a.active { color: #ffdb28; }
+.profero .navigation-bar .share { position: absolute; top: 8px; right: 20px; }
+.profero .navigation-bar .share ul li { color: #000; font-family: 'TisaSansOT-BoldItalic', sans-serif; font-weight: bold; font-style: normal; font-size: 14px; text-decoration: none; outline: none; list-style-type: none; display: inline-block; }
+.profero .navigation-bar .share ul li a { width: 18px; height: 19px; display: block; text-indent: -999em; margin: 0 3px; margin-bottom: -3px; cursor: pointer; }
+.profero .navigation-bar .share ul li a.twitter { background: url("../img/icons/allIcon.png") no-repeat 0 -19px; }
+.profero .navigation-bar .share ul li a.twitter:hover { background: url("../img/icons/allIcon.png") no-repeat 0 0px; }
+.profero .navigation-bar .share ul li a.facebook { background: url("../img/icons/allIcon.png") no-repeat 0 -60px; }
+.profero .navigation-bar .share ul li a.facebook:hover { background: url("../img/icons/allIcon.png") no-repeat 0 -40px; }
+.profero .navigation-bar .share ul li a.youtube { background: url("../img/icons/allIcon.png") no-repeat 0 -140px; }
+.profero .navigation-bar .share ul li a.youtube:hover { background: url("../img/icons/allIcon.png") no-repeat 0 -120px; }
+.profero .navigation-bar .offcanvas-button { position: absolute; top: 5px; right: 10px; }
+.profero .navigation-bar .offcanvas-button button { border: 1px solid #fff; padding: 0; width: 56px; height: 41px; }
+.profero .navigation-bar .offcanvas-button button img { width: 100%; height: 100%; display: none; }
+.profero .navigation-bar .offcanvas-button button img.active { display: block; }
+.profero .navigation-bar .offcanvas { position: fixed; top: 0; right: -80%; z-index: 999; width: 80%; max-width: 250px; background: #eaeaea url("../img/offcanvas-menu-bg.png") no-repeat repeat; -webkit-background-size: 100% 1px; -moz-background-size: 100% 1px; background-size: 100% 1px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; max-height: 100%; height: 100%; overflow-y: scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling: touch; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; }
+.profero .navigation-bar .offcanvas.active { right: 0%; }
+.profero .navigation-bar .offcanvas .location-city { height: 71px; border-bottom: 1px solid #e0e0e0; line-height: 70px; font-size: 22px; color: #000; -webkit-box-shadow: 0px 1px 6px #e7e7e7; box-shadow: 0px 1px 6px #e7e7e7; padding-left: 20px; }
+.profero .navigation-bar .offcanvas .location-city img { float: right; margin-right: 20px; margin-top: 17px; }
+.profero .navigation-bar .offcanvas .block-nav-links a { display: block; color: #000; font-size: 22px; line-height: 40px; padding-left: 20px; }
+.profero .navigation-bar .offcanvas .block-nav-links a:hover { text-decoration: none; }
+.profero .navigation-bar .offcanvas .block-nav-links a.disabled { color: #999; }
+.profero .navigation-bar .offcanvas .block-nav-links a:first-child { padding-top: 10px; }
+.profero .navigation-bar .offcanvas .block-nav-links a:last-child { padding-bottom: 10px; }
+.profero .navigation-bar .offcanvas .block-nav-links.mb-30 { margin-bottom: 30px; }
+.profero .navigation-bar .offcanvas .block-nav-links.provinces { display: none; background: #eaeaea url("../img/offcanvas-menu-location-list-bg.png") no-repeat repeat; -webkit-background-size: 100% 1px; -moz-background-size: 100% 1px; background-size: 100% 1px; }
+.profero .navigation-bar .offcanvas .block-nav-links.sub { display: none; background: #eaeaea url("../img/offcanvas-menu-sub-location-list-bg.png") no-repeat repeat; -webkit-background-size: 100% 1px; -moz-background-size: 100% 1px; background-size: 100% 1px; }
+.profero .navigation-bar .offcanvas .separator { border-top: solid 1px #ebebeb; border-bottom: 1px solid #e5e5e5; width: 100%; height: 0px; }
+.profero .navigation-bar .offcanvas .follow-us { padding: 20px 0 20px 20px; }
+.profero .navigation-bar .offcanvas .follow-us .title { color: #6f6f6f; font-size: 18px; margin-bottom: 10px; line-height: 18px; }
+.profero .navigation-bar .offcanvas .follow-us ul { padding: 0px; margin: 0px; }
+.profero .navigation-bar .offcanvas .follow-us ul li { display: inline-block; }
+.profero .navigation-bar .offcanvas .follow-us ul li a { display: inline-block; padding-right: 15px; }
+.profero .navigation-bar .offcanvas .follow-us ul li a:last-child { padding-right: 0; }
+.profero .navigation-bar .offcanvas .bottom-links { padding: 20px 0 20px 20px; }
+.profero .navigation-bar .offcanvas .bottom-links a { display: block; line-height: 25px; font-size: 13px; color: #6f6f6f; }
+.profero .main-content { position: relative; margin-top: 71px; padding-bottom: 40px; margin-left: auto; margin-right: auto; -webkit-transition: all ease-in-out 0.2s; -moz-transition: all ease-in-out 0.2s; -o-transition: all ease-in-out 0.2s; -ms-transition: all ease-in-out 0.2s; transition: all ease-in-out 0.2s; }
+
+
+.profero .oc-active { overflow: hidden; position: fixed; z-index: -1; }
+.profero .bottom-bar { position: fixed; height: 30px; width: 100%; bottom: 0px; left: 0px; right: 0px; border-top: 1px solid #e7e7e7; -webkit-box-shadow: 0px -1px 6px rgba(0,0,0,0.467); box-shadow: 0px -1px 6px rgba(0,0,0,0.467); background-color: #fff; z-index: 10; }
+.profero .bottom-bar a,
+.profero .bottom-bar span { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; line-height: 30px; color: #6f6f6f; text-transform: uppercase; padding: 1px 5px; font-size: 10px; }
+.profero .bottom-bar a.right,
+.profero .bottom-bar span.right { float: right; }
+.profero .bottom-bar a.left,
+.profero .bottom-bar span.left { float: left; }
+.profero .bottom-bar.oc-menu { z-index: 10; background-color: #fff; }
+.profero .homepage { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 20px; position: fixed; top: 0px; height: 100%; bottom: 0px; display: table; }
+.profero .homepage .homepage-td { width: 100%; display: table-cell; vertical-align: middle; }
+.profero .homepage .homepage-td .homepage-content { width: 70%; margin: 0 auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.profero .homepage .homepage-td .homepage-content h1 { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; font-size: 71.5px; color: #231f20; text-align: center; padding-top: 0px; line-height: 1.1em; margin-top: 80px; }
+.profero .homepage .homepage-td .homepage-content h2 { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; font-size: 27.82px; color: #767676; text-align: center; margin: 0; padding: 0; padding-top: 11px; }
+.profero .homepage .homepage-td .homepage-content .homepage-description { font-size: 15px; width: 73%; margin: 20px auto; }
+.profero .homepage .homepage-td .homepage-content .homepage-description .description-block { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px 0; }
+.profero .homepage .homepage-td .homepage-content .homepage-work { width: 85%; margin: 0 auto; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem { margin-bottom: 10px; cursor: pointer; -webkit-transition: background-color 0.1s ease-in; -moz-transition: background-color 0.1s ease-in; -o-transition: background-color 0.1s ease-in; -ms-transition: background-color 0.1s ease-in; transition: background-color 0.1s ease-in; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem:hover { background-color: #f4f4f4; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .img-hide { width: 100%; overflow: hidden; height: 50%; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .img-hide img { width: 100%; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-title { font-size: 18px; text-align: center; color: #333; margin-top: 14px; margin-bottom: 3px; }
+.profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-description { color: #a8a8a8; text-align: center; font-size: 14px; text-transform: uppercase; padding-bottom: 10px; }
+
+@media (max-height: 600px) {
+    .profero .homepage { position: relative; top: 0px; bottom: 0px; }
+    .profero .homepage .homepage-td .homepage-content h1 { margin-top: 20px; }
+}
+
+@media (max-width: 960px) {
+    .profero .homepage { position: relative; top: 0px; bottom: 0px; }
+    .profero .homepage .homepage-td .homepage-content h1 { margin-top: 0; margin-bottom: 0; font-size: 60px; margin-top: 20px; }
+    .profero .homepage .homepage-td .homepage-content h2 { font-size: 25px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-description { width: 85%; font-size: 15px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-title { font-size: 27px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-description { font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+    .profero .homepage .homepage-td .homepage-content { width: 100%; }
+    .profero .homepage .homepage-td .homepage-content h1,
+    .profero .homepage .homepage-td .homepage-content h2 { text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; padding-right: 10px; }
+    .profero .homepage .homepage-td .homepage-content h1 { font-family: 'TisaSansOT-BoldItalic', sans-serif; font-weight: bold; font-style: normal; font-size: 40px; margin-top: 20px; }
+    .profero .homepage .homepage-td .homepage-content h2 { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 27px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-description { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; padding-right: 10px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-description .description-block { font-size: 15px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work { width: 100%; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 96%; margin-left: 2%; margin-right: 2%; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem img { overflow: auto; height: auto; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-title { font-size: 21px; }
+    .profero .homepage .homepage-td .homepage-content .homepage-work .work-elem .work-elem-description { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; font-size: 12px; }
+}
+
+.profero .services .left-menu { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; max-width: 260px; margin-top: 110px; }
+.profero .services .left-menu .kit-left-menu-elem { margin-bottom: 20px; }
+.profero .services .left-menu .link-grid a { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; padding-left: 15px; }
+.profero .services .page-content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'TisaSansOT', Arial; line-height: 28px; font-size: 24px; }
+.profero .services .page-content h1.kit-main-title { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; padding-top: 42px; padding-bottom: 32px; font-size: 47px; line-height: 1.2em; color: #000; margin: 0; }
+.profero .services .page-content h2.kit-title-2 { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; margin: 0; font-size: 30px; margin-top: 42px; }
+.profero .services .page-content p { color: #494949; font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 15px; margin-top: 0px; line-height: 1.5; margin-bottom: 20px; }
+.profero .services .page-content p.article { margin: 20px 0; }
+.profero .services .page-content .link-grid a,
+.profero .services .page-content .link-grid-content a { font-family: 'TisaSansOT', Arial; font-size: 14px; padding: 6px 0px; }
+.profero .services .page-content .link-grid a:hover,
+.profero .services .page-content .link-grid-content a:hover { color: #666; text-decoration: none; }
+.profero .services .page-content .link-grid-content a { display: block; }
+.profero .services .page-content .service-example { padding-top: 20px; }
+.profero .services .page-content .service-example .work-elem { margin-bottom: 10px; cursor: pointer; -webkit-transition: background-color 0.1s ease-in; -moz-transition: background-color 0.1s ease-in; -o-transition: background-color 0.1s ease-in; -ms-transition: background-color 0.1s ease-in; transition: background-color 0.1s ease-in; }
+.profero .services .page-content .service-example .work-elem:hover { background-color: #f4f4f4; }
+.profero .services .page-content .service-example .work-elem .img-hide { width: 100%; overflow: hidden; height: 50%; }
+.profero .services .page-content .service-example .work-elem .img-hide img { width: 100%; }
+.profero .services .page-content .service-example .work-elem .work-elem-title { font-size: 18px; text-align: center; color: #333; margin-top: 14px; margin-bottom: 3px; }
+.profero .services .page-content .service-example .work-elem .work-elem-description { color: #a8a8a8; text-align: center; font-size: 14px; text-transform: uppercase; padding-bottom: 10px; }
+
+@media (max-width: 960px) {
+    .profero .services .left-menu { max-width: 250px; padding-left: 35px; }
+    .profero .services .page-content h1.kit-main-title { font-size: 47px; }
+}
+
+@media (max-width: 767px) {
+    .profero .services .left-menu { max-width: 100%; margin: 0; margin-bottom: 15px; padding-top: 2px; padding-left: 25px; }
+    .profero .services .left-menu .kit-left-menu-elem { -webkit-box-shadow: none; box-shadow: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 0; border: none; }
+    .profero .services .left-menu .kit-left-menu-elem.highlight { color: inherit; }
+    .profero .services .left-menu .kit-left-menu-elem.category { display: none; }
+    .profero .services .left-menu .kit-left-menu-elem .menu-title { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; text-align: left; height: 50px; font-size: 26px; line-height: 50px; padding-left: 13px; text-indent: 10px; background-color: #e7e7e7; background-image: url("../img/icons/drop-down-grey-small.png"); background-repeat: no-repeat; background-position: 97% center; }
+    .profero .services .left-menu .kit-left-menu-elem.master-category .menu-title { background-color: #f3f3f3; color: #444; }
+    .profero .services .left-menu .kit-left-menu-elem.category .menu-title { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; color: #444; }
+    .profero .services .left-menu .kit-left-menu-elem .link-grid { display: none; background-color: #d6d6d6; }
+    .profero .services .left-menu .kit-left-menu-elem .link-grid a { display: block; line-height: 40px; font-size: 17px; padding-left: 23px; color: #494949; }
+    .profero .services .left-menu .kit-left-menu-elem .link-grid a:hover { text-decoration: none; color: #666; }
+    .profero .services .left-menu .kit-left-menu-elem.selected { padding-bottom: 0px; }
+    .profero .services .left-menu .kit-left-menu-elem.selected .menu-title { background-image: url("../img/icons/drop-up-grey-small.png"); }
+    .profero .services .page-content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 50px; padding-right: 20px; }
+    .profero .services .page-content h1.kit-main-title { padding-bottom: 25px; }
+    .profero .services .page-content h2.kit-title-2 { font-size: 28px; line-height: 55.23px; margin-top: 25px; margin-bottom: 15px; }
+    .profero .services .page-content p { font-size: 16px; line-height: 24px; margin-bottom: 15px; }
+    .profero .services .page-content .link-grid a,
+    .profero .services .page-content .link-grid-content a { font-size: 20px; line-height: 33px; }
+}
+
+.profero .global-work-bg { background-color: #fbfbfb; position: fixed; height: 100%; width: 100%; top: 0; bottom: 0; left: 0; z-index: -1; }
+.profero .global-work { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-right: auto; margin-left: auto; }
+.profero .global-work .custom-grid { display: block; font-size: 0; }
+.profero .global-work .custom-grid .custom-width-large-1-3 { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *display: inline; zoom: 1; vertical-align: top; min-height: 1px; width: 33.333%; }
+
+@media (min-width : 1800px) {
+    .profero .global-work .custom-grid .custom-width-xlarge-1-5 { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *display: inline; zoom: 1; vertical-align: top; min-height: 1px; width: 20%; }
+}
+
+@media (min-width : 1281px) {
+    .profero .global-work .custom-grid .custom-width-xlarge-1-4 { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *display: inline; zoom: 1; vertical-align: top; min-height: 1px; width: 25%; }
+}
+
+@media (max-width : 960px) {
+    .profero .global-work .custom-grid .custom-width-medium-1-2 { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *display: inline; zoom: 1; vertical-align: top; min-height: 1px; width: 50%; }
+}
+
+@media (max-width : 767px) {
+    .profero .global-work .custom-grid .custom-width-small-1-1 { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *display: inline; zoom: 1; vertical-align: top; min-height: 1px; width: 100%; }
+}
+
+.profero .global-work .sub-location-bar { position: fixed; height: 40px; width: 100%; top: 70px; left: 0; background-color: #fff; text-align: center; -webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.467); box-shadow: 0px 1px 6px rgba(0,0,0,0.467); z-index: 2; }
+.profero .global-work .sub-location-bar a,
+.profero .global-work .sub-location-bar span { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; line-height: 45px; margin: 0 10px; color: #000; font-size: 18px; text-decoration: none; }
+.profero .global-work .sub-location-bar a.active,
+.profero .global-work .sub-location-bar span.active { color: #ffdb28; }
+.profero .global-work .sub-location-bar a:hover,
+.profero .global-work .sub-location-bar span:hover { color: #808080; text-decoration: none; }
+.profero .global-work .sub-location-bar span:hover { color: #ffdb28; text-decoration: none; }
+.profero .global-work .work-content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-color: #fbfbfb; padding-right: 40px; padding-left: 40px; margin-bottom: 31px; width: 100%; padding-right: 250px; }
+.profero .global-work .work-content h1.kit-main-title { font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; font-size: 46px; margin: 0; display: inline-block; color: #000; padding-top: 60px; margin-right: 20px; }
+.profero .global-work .work-content .main-page-description { display: inline-block; font-family: 'TisaSansOT-MediumItalic', sans-serif; font-weight: normal; font-style: normal; color: #929292; font-size: 27px; }
+.profero .global-work .work-content a.work-link { text-decoration: none; }
+.profero .global-work .work-content a.work-link .work-elem { padding: 0 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-top: 20px; }
+.profero .global-work .work-content a.work-link .work-elem img { width: 100%; }
+.profero .global-work .work-content a.work-link .work-elem .work-elem-description-block { height: 135px; text-align: center; }
+.profero .global-work .work-content a.work-link .work-elem .work-elem-description-block .work-elem-title { padding-top: 30px; font-size: 21px; color: #333; line-height: 1.2em; }
+.profero .global-work .work-content a.work-link .work-elem .work-elem-description-block .work-elem-sub { color: #a8a8a8; text-transform: uppercase; padding-top: 10px; font-size: 14px; }
+.profero .global-work .work-content a.work-link .work-elem:hover .work-elem-description-block { background-color: #f0f0f0; }
+.profero .global-work .brand-content { background-color: #f3f3f3; padding: 0; width: 240px; max-height: 100%; overflow-y: scroll; position: fixed; right: 0; top: 73px; bottom: 31px; overflow-y: scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling: touch; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; }
+.profero .global-work .brand-content h2 { margin: 0; }
+.profero .global-work .brand-content h2.kit-title-2 { font-family: 'TisaSansOT-Italic', sans-serif; font-weight: normal; font-style: normal; margin: 0; font-size: 27px; margin-top: 30px; text-align: center; margin-bottom: 30px; }
+.profero .global-work .brand-content .brand-elem { margin: 10px 20px; }
+.profero .global-work .brand-content .brand-elem img { width: 100%; }
+
+@media (max-width: 960px) {
+    .profero .global-work .work-content { width: 100%; margin-bottom: 0px; }
+    .profero .global-work .work-content h1.kit-main-title { margin-bottom: 0; display: block; font-size: 61px; }
+    .profero .global-work .work-content .main-page-description { display: block; padding: 0; margin-bottom: 10px; }
+    .profero .global-work .brand-content { bottom: 0px; overflow-y: scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling: touch; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; }
+}
+
+@media (max-width: 767px) {
+    .profero .global-work .work-content { width: 100%; padding-right: 0px; padding-left: 0px; margin-bottom: 0px; }
+    .profero .global-work .work-content h1.kit-main-title,
+    .profero .global-work .work-content .main-page-description { margin-left: 20px; margin-right: 20px; }
+    .profero .global-work .work-content h1.kit-main-title { font-size: 40px; padding-bottom: 15px; }
+    .profero .global-work .work-content .main-page-description { margin-bottom: 30px; }
+    .profero .global-work .work-content a.work-link .work-elem { margin-top: 0px; }
+    .profero .global-work .work-content a.work-link .work-elem img { width: 100%; }
+    .profero .global-work .work-content a.work-link .work-elem .work-elem-description-block { height: 100%; }
+    .profero .global-work .work-content a.work-link .work-elem .work-elem-description-block .work-elem-title { font-size: 21px; }
+    .profero .global-work .work-content a.work-link .work-elem .work-elem-description-block .work-elem-sub { font-size: 12px; margin-bottom: 25px; }
+    .profero .global-work .brand-content { bottom: 0px; }
+    .profero .global-work .brand-content h2.kit-title-2 { font-size: 30px; }
+}
+
+@media (max-width: 767px) {
+    .profero .global-work { width: 100%; padding: 0; margin: 0; }
+}
+
+.profero .clients { background-color: #f3f3f3; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px 3.5px; display: block; position: fixed; top: 72px; bottom: 0px; left: 0; right: 0; width: 100%; overflow-y: scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling: touch; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; }
+.profero .clients .full-grey-bg { background-color: #f3f3f3; position: fixed; width: 100%; top: 0; left: 0; right: 0; bottom: 0px; z-index: -2; }
+.profero .clients .brand-elem { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 3.5px; width: 50%; float: left; display: inline-block; background-color: #f3f3f3; }
+.profero .clients .brand-elem img { width: 100%; }
+.profero .people { text-align: center; height: 100%; }
+.profero .people .people-full-black-bg { background-color: #000; position: fixed; width: 100%; top: 71px; left: 0; right: 0; bottom: -500px; z-index: -3; }
+.profero .people .sub-location { padding-top: 80px; text-align: center; }
+.profero .people .sub-location a { font-family: 'TisaSansOT', Arial, Verdana, sans-serif; display: inline-block; color: #c1c1c1; padding-bottom: 3px; font-size: 14px; margin: 0 14px; }
+.profero .people .sub-location a.active { border-bottom: solid 2px #ffda23; }
+.profero .people .sub-location a:first-child { margin-left: 0px; }
+.profero .people .sub-location a:last-child { margin-right: 0px; }
+.profero .people .people-table { display: table; width: 100%; height: 90%; }
+.profero .people .people-table .people-content { text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 50px; width: 100%; display: block; vertical-align: middle; display: table-cell; height: 100%; font-size: 0; }
+.profero .people .people-table .people-content a.people-portraits { display: inline-block; text-decoration: none; position: relative; width: 19.989%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px; font-size: 0; vertical-align: bottom; }
+
+@media (min-width: 1400px) {
+    .profero .people .people-table .people-content a.people-portraits { width: 12.489%; }
+}
+
+.profero .people .people-table .people-content a.people-portraits .people-elem { font-size: 0; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .people-elem-layout-darker { -webkit-transition: background-color 0.1s ease-in; -moz-transition: background-color 0.1s ease-in; -o-transition: background-color 0.1s ease-in; -ms-transition: background-color 0.1s ease-in; transition: background-color 0.1s ease-in; position: absolute; height: 100%; width: 100%; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,0); font-size: 0; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .people-elem-layout-darker.visible { background-color: rgba(0,0,0,0.667); }
+.profero .people .people-table .people-content a.people-portraits .people-elem .image-container { text-align: center; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .image-container img { width: 90%; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .people-description { height: 60px; font-size: 0; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .people-description .people-description-name { font-family: 'TisaSansOT', Arial, Verdana, sans-serif; margin-top: 14px; color: #c1c1c1; text-align: center; font-size: 15px; display: block; font-weight: normal; font-style: normal; }
+.profero .people .people-table .people-content a.people-portraits .people-elem .people-description .people-description-position { font-family: 'TisaSansOT', Arial, Verdana, sans-serif; color: #c1c1c1; text-align: center; text-transform: uppercase; font-size: 9px; font-weight: normal; font-style: normal; line-height: 15px; }
+
+@media (max-width: 960px) {
+    .profero .people .sub-location { padding-top: 80px; }
+    .profero .people .people-table { margin-top: 30px; }
+    .profero .people .people-table .people-content { padding: 0 5px; }
+    .profero .people .people-table .people-content a.people-portraits { width: 33.32233333333333%; }
+}
+
+@media (max-width: 767px) {
+    .profero .people .sub-location { padding-top: 26px; }
+    .profero .people .people-table { padding-top: 80px; display: block; }
+    .profero .people .people-table .people-content { display: block; padding: 0 5px; }
+    .profero .people .people-table .people-content a.people-portraits { width: 49.989%; }
+    .profero .people .people-table .people-content .people-elem .people-description .people-description-name { font-size: 13px; }
+    .profero .people .people-table .people-content .people-elem .people-description .people-description-position { font-size: 8px; }
+}
+
+.profero .people-portraits .full-black-bg { background-color: #000; position: fixed; width: 100%; height: 100%; top: 71px; left: 0; right: 0; bottom: 0; z-index: -10; }
+.profero .people-portraits .sub-location { padding-top: 20px; text-align: center; background-color: #000; }
+.profero .people-portraits .sub-location a { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; display: inline-block; color: #c1c1c1; padding-bottom: 3px; font-size: 15px; margin: 0 14px; background-color: #000; }
+.profero .people-portraits .sub-location a.active { border-bottom: solid 2px #ffda23; }
+.profero .people-portraits .sub-location a:first-child { margin-left: 0px; }
+.profero .people-portraits .nav-back-side,
+.profero .people-portraits .nav-next-side { position: fixed; height: 100%; width: 214px; top: 30px; bottom: 0px; z-index: 1; background: rgba(26,26,26,0); background-image: url("../img/icons/nav-back-side.png"); background-position: 76px center; background-repeat: no-repeat; cursor: pointer; }
+.profero .people-portraits .nav-back-side:hover,
+.profero .people-portraits .nav-next-side:hover { height: 100%; background: rgba(26,26,26,0.667); background-image: url("../img/icons/nav-back-side-white.png"); background-repeat: no-repeat; background-position: 76px center; }
+.profero .people-portraits .nav-next-side { right: 0; background-image: url("../img/icons/nav-next-side.png"); }
+.profero .people-portraits .nav-next-side:hover { background-image: url("../img/icons/nav-next-side-white.png"); }
+.profero .people-portraits .people-portraits-content .portrait-elem { width: 60%; margin: 0 auto; display: none; }
+.profero .people-portraits .people-portraits-content .portrait-elem:first-child { display: block; }
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-bg-picture { -webkit-transition: right ease-in-out 0.2s; -moz-transition: right ease-in-out 0.2s; -o-transition: right ease-in-out 0.2s; -ms-transition: right ease-in-out 0.2s; transition: right ease-in-out 0.2s; position: fixed; top: 120px; bottom: 30px; max-height: 100%; width: 100%; right: 20%; z-index: -1; background-position: right bottom; -webkit-background-size: auto 90%; -moz-background-size: auto 90%; background-size: auto 90%; background-repeat: no-repeat; }
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-name { font-family: 'TisaSansOT-BoldItalic', sans-serif; font-weight: bold; font-style: normal; color: #fff; font-size: 56px; margin-top: 15%; padding-bottom: 18px; line-height: 68px; }
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-location,
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-description { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; font-size: 18px; margin-bottom: 64px; }
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-location { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; font-size: 18px; }
+.profero .people-portraits .people-portraits-content .portrait-elem .portrait-description { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; color: #fff; font-size: 30px; width: 60%; margin-bottom: 10px; line-height: 35px; }
+
+@media (max-width: 960px) {
+    .profero .people-portraits .nav-back-side,
+    .profero .people-portraits .nav-next-side { height: 155px; width: 70px; background: rgba(26,26,26,0.4); background-image: url("../img/icons/nav-back-side-white-ie.png"); background-position: center; background-repeat: no-repeat; top: 50%; }
+    .profero .people-portraits .nav-back-side:hover,
+    .profero .people-portraits .nav-next-side:hover { background: rgba(26,26,26,0.667); top: 50%; height: 155px; width: 70px; background-image: url("../img/icons/nav-back-side-white-ie.png"); background-position: center; background-repeat: no-repeat; }
+    .profero .people-portraits .nav-next-side { background-image: url("../img/icons/nav-next-side-white-ie.png"); left: auto; }
+    .profero .people-portraits .nav-next-side:hover { background-image: url("../img/icons/nav-next-side-white-ie.png"); }
+    .profero .people-portraits .people-portraits-content .portrait-elem { width: 70%; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-name { padding-top: 10%; font-size: 45px; line-height: 68px; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-description { width: 100%; font-size: 30px; line-height: 33.6px; word-spacing: 40; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-bg-picture { bottom: 0px; right: 0; -webkit-background-size: auto 70%; -moz-background-size: auto 70%; background-size: auto 70%; }
+}
+
+@media (max-width: 767px) {
+    .profero .people-portraits .people-portraits-content { float: left; }
+    .profero .people-portraits .people-portraits-content .portrait-elem { min-height: 300px; position: relative; padding-bottom: 30px; width: 80%; color: #fff; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-name { margin-top: 30px; font-size: 34px; line-height: 1.1em; padding-bottom: 0; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-location { font-size: 18px; margin-bottom: 20px; }
+    .profero .people-portraits .people-portraits-content .portrait-elem .portrait-description { font-size: 18px; width: 100%; margin-bottom: 0px; z-index: 10; line-height: 1.1em; }
+    .profero .people-portraits .people-portraits-content .portrait-elem img.portrait-small { position: fixed; top: 80px; right: -20%; width: 100%; opacity: 0.4; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; filter: alpha(opacity=40); z-index: -1; }
+    .profero .people-portraits .people-portraits-content .people-portraits-nav .nav-back,
+    .profero .people-portraits .people-portraits-content .people-portraits-nav .nav-next { font-family: 'TisaSansOT-Light', sans-serif; font-weight: normal; font-style: normal; width: 49%; display: inline-block; float: left; text-align: center; line-height: 75px; height: 75px; color: #fff; background-color: rgba(26,26,26,0.667); font-size: 35px; }
+    .profero .people-portraits .people-portraits-content .people-portraits-nav .nav-back { margin-right: 1%; background-image: url("../img/icons/nav-back-side-white-ie.png"); background-position: center; background-repeat: no-repeat; -webkit-background-size: auto 36px; -moz-background-size: auto 36px; background-size: auto 36px; }
+    .profero .people-portraits .people-portraits-content .people-portraits-nav .nav-next { margin-left: 1%; background-image: url("../img/icons/nav-next-side-white-ie.png"); background-position: center; background-repeat: no-repeat; -webkit-background-size: auto 36px; -moz-background-size: auto 36px; background-size: auto 36px; }
+}
+
+.profero .work { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; }
+.profero .work .work-header { -webkit-transition: top 0.2s ease-in-out; -moz-transition: top 0.2s ease-in-out; -o-transition: top 0.2s ease-in-out; -ms-transition: top 0.2s ease-in-out; transition: top 0.2s ease-in-out; position: fixed; width: 100%; text-align: center; padding-top: 30px; background-color: #fff; -webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.467); box-shadow: 0px 1px 6px rgba(0,0,0,0.467); z-index: 2; }
+.profero .work .work-header h1 { font-family: 'TisaSansOT-Italic', sans-serif; font-weight: normal; font-style: normal; font-style: italic; color: #353535; font-size: 41px; line-height: 1.1em; margin: 0; padding: 0; padding-bottom: 10px; }
+.profero .work .work-header .h2-content-decorator { display: inline-block; background: rgba(255,255,255,0) url("../img/work/h2-line-bg.png") repeat no-repeat center center; line-height: 60px; }
+.profero .work .work-header .h2-content-decorator h2 { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; color: #767676; font-size: 15px; text-transform: uppercase; padding: 0px 10px; margin: 0 60px; display: inline-block; background-color: #fff; }
+.profero .work .work-header .top-links a { font-family: 'TisaSansOT', sans-serif; font-weight: normal; font-style: normal; display: inline-block; margin: 0 9px; font-size: 16px; color: #353535; }
+.profero .work .work-header .top-links a:hover { text-decoration: none; }
+.profero .work .work-header .top-links a.active { border-bottom: solid 5px #fede00; }
+.profero .work .work-main-picture { position: relative; z-index: 1; padding-top: 212px; width: 100%; text-align: center; background-color: #f3f3f3; }
+.profero .work .work-main-picture .work-main-picture-white-bg { background-color: #fff; height: 40px; width: 100%; position: absolute; bottom: 0px; z-index: -1; }
+.profero .work .work-main-picture .main-illustration { display: inline-block; width: 60%; background: #f3f3f3; border-bottom: solid 10px #f3f3f3; border-left: solid 10px #f3f3f3; border-right: solid 10px #f3f3f3; }
+.profero .work .work-main-picture .main-illustration > * { display: block; width: 100%; }
+.profero .work .work-content { width: 60%; margin: 0 auto; }
+.profero .work .work-content:last-child { margin-bottom: 40px; }
+.profero .work .work-content .share-work { margin-top: 26px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 80px; }
+.profero .work .work-content .share-work span { padding-top: 6px; line-height: 27px; font-size: 23px; color: #737476; font-family: 'TisaSansOT-Light'; }
+.profero .work .work-content .share-work .link-button { border: 1px solid #e7e7e7; display: block; height: 27px; line-height: 27px; -webkit-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-border-radius: 3px; font-size: 16px; color: #aaa; font-style: normal; width: 47px; float: right; margin-right: 6px; text-indent: -9999em; }
+.profero .work .work-content .share-work .link-button.facebook { background: url("http://profero.com/images/site_new/social_btns.jpg") no-repeat 0px 0px; }
+.profero .work .work-content .share-work .link-button.facebook:hover { background: url("http://profero.com/media/271018/social_btns_ro.jpg") no-repeat 0px 0px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
