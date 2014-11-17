@@ -11,7 +11,14 @@ namespace SC.WebSite.Layouts.Common
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Sitecore.Data.Items.Item item = Sitecore.Context.Item;
+            if (item!=null)
+            {
+                for (int i = 0; i < item.Children.Count; i++)
+                {
+                    
+                }
+            }
         }
     }
 }
