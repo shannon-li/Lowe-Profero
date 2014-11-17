@@ -16,6 +16,11 @@ E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.WebSite.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.WebSite.pdb
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.Logic.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.Logic.pdb
-E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.csprojResolveAssemblyReference.cache
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.pdb
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\bin\Starsoft.Web.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\bin\Starsoft.Core.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\bin\Starsoft.UrlRewriting.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\bin\Starsoft.Web.xml
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\bin\Starsoft.Core.xml
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.csprojResolveAssemblyReference.cache

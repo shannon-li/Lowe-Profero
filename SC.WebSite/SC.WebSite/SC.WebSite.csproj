@@ -42,6 +42,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Starsoft.Web">
+      <HintPath>..\Library\Starsoft.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -98,7 +101,6 @@
     </Compile>
     <Compile Include="Layouts\Global.aspx.cs">
       <DependentUpon>Global.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layouts\Global.aspx.designer.cs">
       <DependentUpon>Global.aspx</DependentUpon>

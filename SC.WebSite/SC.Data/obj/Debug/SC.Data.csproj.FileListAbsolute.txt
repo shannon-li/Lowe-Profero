@@ -7,3 +7,12 @@ E:\Github\SC.WebSite\SC.WebSite\SC.Data\bin\Debug\NetUniver.Core.xml
 E:\Github\SC.WebSite\SC.WebSite\SC.Data\obj\Debug\SC.Data.csprojResolveAssemblyReference.cache
 E:\Github\SC.WebSite\SC.WebSite\SC.Data\obj\Debug\SC.Data.dll
 E:\Github\SC.WebSite\SC.WebSite\SC.Data\obj\Debug\SC.Data.pdb
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\SC.Data.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\SC.Data.pdb
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\NetUniver.Core.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\SC.Business.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\SC.Business.pdb
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\bin\Debug\NetUniver.Core.xml
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\obj\Debug\SC.Data.csprojResolveAssemblyReference.cache
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\obj\Debug\SC.Data.dll
+E:\GitHub\Lowe-Profero\SC.WebSite\SC.Data\obj\Debug\SC.Data.pdb

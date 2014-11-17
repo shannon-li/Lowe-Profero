@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SC.WebSite.Layouts
 {
-    public partial class Global : System.Web.UI.Page
+    public partial class Global : SC.Logic.LogicPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
