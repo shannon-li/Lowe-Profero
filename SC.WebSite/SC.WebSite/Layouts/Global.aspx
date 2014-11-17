@@ -14,7 +14,7 @@
     <div class="profero">
         <sc:Placeholder ID="UC_Head" Key="UC_Head" runat="server" />
         <sc:Placeholder ID="UC_Body" Key="UC_Body" runat="server" />
-        <sc:Placeholder ID="UC_Foot" Key="UC_Foot" runat="server" />
+        <sc:Placeholder ID="UC_Foot" Key="UC_Foot" runat="server" /> 
     </div>
     <form id="hidden_form" runat="server"></form>
 </body>
