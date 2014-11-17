@@ -11,3 +11,16 @@ E:\Github\SC.WebSite\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.Core.xml
 E:\Github\SC.WebSite\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.SqlClient.xml
 E:\Github\SC.WebSite\SC.WebSite\SC.Data.SqlClient\obj\Debug\SC.Data.SqlClient.dll
 E:\Github\SC.WebSite\SC.WebSite\SC.Data.SqlClient\obj\Debug\SC.Data.SqlClient.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Data.SqlClient.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Data.SqlClient.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.Core.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.SqlClient.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Business.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Data.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Business.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\SC.Data.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.Core.xml
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\bin\Debug\NetUniver.SqlClient.xml
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\obj\Debug\SC.Data.SqlClient.csprojResolveAssemblyReference.cache
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\obj\Debug\SC.Data.SqlClient.dll
+E:\Github\Lowe-Profero\SC.WebSite\SC.Data.SqlClient\obj\Debug\SC.Data.SqlClient.pdb
