@@ -7,29 +7,27 @@
             <h1 class="kit-main-title"><%=Page.AreaItem.Name %> Work</h1>
             <div class="custom-grid">
 
-                <%
-                    if (this.List_Works != null && this.List_Works.Length > 0)
-                    {
-                        foreach (Sitecore.Data.Items.Item item in this.List_Works)
-                        {
-                %>
-                <div class="custom-width-xlarge-1-5 custom-width-xlarge-1-4 custom-width-large-1-3 custom-width-medium-1-2 custom-width-small-1-1">
-                    <a class="work-link" href="/works/en/uk/send-yourself-home">
-                        <div class="work-elem">
-                            <img src="/media/404906/syh.jpg">
-                            <div class="work-elem-description-block">
-                                <div class="work-elem-title tisaProBoldIta">
-                                    <p>Send Yourself Home</p>
+                <asp:Repeater ID="Repeater_WorkList" runat="server">
+                    <ItemTemplate>
+                        <div class="custom-width-xlarge-1-5 custom-width-xlarge-1-4 custom-width-large-1-3 custom-width-medium-1-2 custom-width-small-1-1">
+                            <a class="work-link" href="<%#Sitecore.Links.LinkManager.GetItemUrl((Sitecore.Data.Items.Item)Container.DataItem).ToLower() %>">
+                                <div class="work-elem">
+                                    <sc:Image ID="Photo" Field="Photo" runat="server" Width="185" Height="107" Item="<%# Container.DataItem %>" />
+                                    <div class="work-elem-description-block">
+                                        <div class="work-elem-title tisaProBoldIta">
+                                            <p>
+                                                <sc:Text runat="server" ID="Title" Field="Title" Item="<%# Container.DataItem %>" />
+                                            </p>
+                                        </div>
+                                        <div class="work-elem-sub TisaSansOT">
+                                            <sc:Text runat="server" ID="Company" Field="Company" Item="<%# Container.DataItem %>" />
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="work-elem-sub TisaSansOT">Western Union</div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <%
-                        }
-                    }
-                %>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
 
         </div>

@@ -8,7 +8,7 @@ using SC.Logic;
 
 namespace SC.WebSite.Layouts.Work
 {
-    public partial class List : System.Web.UI.UserControl
+    public partial class List : SC.Logic.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,9 +21,10 @@ namespace SC.WebSite.Layouts.Work
         /// </summary>
         private void Load_WorkList()
         {
-            Sitecore.Data.Items.Item currentItem = Sitecore.Context.Item;
+            this.List_Works = Sitecore.Context.Item.Axes.SelectItems(string.Format(".//*[@@templatename='WorkDetail' and contains(@SelectArea, '{0}')]", Page.AreaItem.ID));
 
-            this.List_Works = Sitecore.Context.Item.Axes.SelectItems(".//*[@@templatename='WorkDetail']");
+            this.Repeater_WorkList.DataSource = this.List_Works;
+            this.Repeater_WorkList.DataBind();
         }
         #endregion
 
@@ -35,22 +36,6 @@ namespace SC.WebSite.Layouts.Work
         {
             get;
             set;
-        }
-
-        /// <summary>
-        /// 获取对包含服务器控件的 CommonPage 实例的引用
-        /// </summary>
-        public new LogicPage Page
-        {
-            get
-            {
-                LogicPage page = base.Page as LogicPage;
-                if (page == null)
-                {
-                    throw new InvalidOperationException("A UserControl can be used only with content pages that derive from LP.CommonPage.CommonPage.");
-                }
-                return page;
-            }
         }
         #endregion
     }
