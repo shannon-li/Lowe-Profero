@@ -67,7 +67,8 @@
     </div>
     <a href="/en/our-work" class="mobile-title uk-hidden-large">Work</a>
     <div class="links uk-hidden-small uk-hidden-medium">
-        <ul>
+        <asp:Literal runat="server" ID="literNAV"></asp:Literal>
+        <%--<ul>
             <li>
                 <a class="active" href="/en/our-work">Work</a>
             </li>
@@ -86,7 +87,7 @@
             <li>
                 <a href="/en/contact-us">Contact us</a>
             </li>
-        </ul>
+        </ul>--%>
     </div>
     <div class="share uk-hidden-small uk-hidden-medium">
         <ul>

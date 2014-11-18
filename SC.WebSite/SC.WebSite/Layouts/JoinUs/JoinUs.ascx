@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="JoinUs.ascx.cs" Inherits="SC.WebSite.Layouts.JoinUs.JoinUs" %>
+﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="JoinUs.ascx.cs" Inherits="SC.WebSite.Layouts.JoinUs.JoinUs" %>
 <html>
 <head>
     <title></title>
