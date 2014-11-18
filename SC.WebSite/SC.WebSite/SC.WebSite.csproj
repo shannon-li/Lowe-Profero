@@ -58,6 +58,9 @@
     <Content Include="Layouts\Common\UC_Head.ascx" />
     <Content Include="Layouts\Common\UC_JS.ascx" />
     <Content Include="Layouts\Global.aspx" />
+    <Content Include="Layouts\JoinUs\ApplyForPosition.ascx" />
+    <Content Include="Layouts\JoinUs\JoinUs.ascx" />
+    <Content Include="Layouts\JoinUs\OurValues.ascx" />
     <Content Include="stupid\js.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -103,6 +106,27 @@
     </Compile>
     <Compile Include="Layouts\Global.aspx.designer.cs">
       <DependentUpon>Global.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\ApplyForPosition.ascx.cs">
+      <DependentUpon>ApplyForPosition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\ApplyForPosition.ascx.designer.cs">
+      <DependentUpon>ApplyForPosition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\JoinUs.ascx.cs">
+      <DependentUpon>JoinUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\JoinUs.ascx.designer.cs">
+      <DependentUpon>JoinUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\OurValues.ascx.cs">
+      <DependentUpon>OurValues.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JoinUs\OurValues.ascx.designer.cs">
+      <DependentUpon>OurValues.ascx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
