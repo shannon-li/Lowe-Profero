@@ -12,10 +12,10 @@ E:\GitHub\SC.WebSite\SC.WebSite\SC.WebSite\bin\SC.Logic.pdb
 E:\GitHub\SC.WebSite\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.csprojResolveAssemblyReference.cache
 E:\GitHub\SC.WebSite\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.dll
 E:\GitHub\SC.WebSite\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.csprojResolveAssemblyReference.cache
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.WebSite.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.WebSite.pdb
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.Logic.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\bin\SC.Logic.pdb
-E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.csprojResolveAssemblyReference.cache
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.WebSite\obj\Debug\SC.WebSite.pdb

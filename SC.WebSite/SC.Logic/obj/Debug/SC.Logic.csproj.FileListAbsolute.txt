@@ -2,3 +2,4 @@ E:\Github\Lowe-Profero\SC.WebSite\SC.Logic\bin\Debug\SC.Logic.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.Logic\bin\Debug\SC.Logic.pdb
 E:\Github\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.dll
 E:\Github\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.pdb
+E:\Github\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.csprojResolveAssemblyReference.cache
