@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Css\global.css" />
+    <Content Include="Content\Css\uikit_new.css" />
     <Content Include="Content\JS\JQuery\jquery-1.11.1.min.js" />
     <Content Include="Layouts\Common\UC_Body.ascx" />
     <Content Include="Layouts\Common\UC_Css.ascx" />
@@ -58,6 +59,7 @@
     <Content Include="Layouts\Common\UC_Head.ascx" />
     <Content Include="Layouts\Common\UC_JS.ascx" />
     <Content Include="Layouts\Global.aspx" />
+    <Content Include="Layouts\Work\List.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +86,7 @@
     </Compile>
     <Compile Include="Layouts\Common\UC_Head.ascx.cs">
       <DependentUpon>UC_Head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layouts\Common\UC_Head.ascx.designer.cs">
       <DependentUpon>UC_Head.ascx</DependentUpon>
@@ -97,9 +100,17 @@
     </Compile>
     <Compile Include="Layouts\Global.aspx.cs">
       <DependentUpon>Global.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layouts\Global.aspx.designer.cs">
       <DependentUpon>Global.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Work\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Work\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

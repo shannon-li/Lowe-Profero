@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="/Content/Css/global.css" rel="stylesheet" />
+    <link href="/Content/Css/uikit_new.css" rel="stylesheet" />
     <sc:Placeholder ID="UC_Css" Key="UC_Css" runat="server" />
     <sc:Placeholder ID="UC_JS" Key="UC_JS" runat="server" />
 </head>

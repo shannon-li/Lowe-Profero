@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlUtils.cs" />
+    <Compile Include="StringUtils.cs" />
+    <Compile Include="ItemHelper.cs" />
     <Compile Include="LogicPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
