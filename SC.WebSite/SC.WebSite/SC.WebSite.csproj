@@ -52,6 +52,7 @@
   <ItemGroup>
     <Content Include="Content\Css\global.css" />
     <Content Include="Content\Css\uikit_new.css" />
+    <Content Include="Content\Img\arrow.gif" />
     <Content Include="Content\JS\JQuery\jquery-1.11.1.min.js" />
     <Content Include="Layouts\Common\UC_Body.ascx" />
     <Content Include="Layouts\Common\UC_Css.ascx" />
@@ -62,6 +63,7 @@
     <Content Include="Layouts\JoinUs\ApplyForPosition.ascx" />
     <Content Include="Layouts\JoinUs\JoinUs.ascx" />
     <Content Include="Layouts\JoinUs\OurValues.ascx" />
+    <Content Include="Layouts\Work\Detail.ascx" />
     <Content Include="Layouts\Work\List.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,6 +131,13 @@
     <Compile Include="Layouts\JoinUs\OurValues.ascx.designer.cs">
       <DependentUpon>OurValues.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\Work\Detail.ascx.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Work\Detail.ascx.designer.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\Work\List.ascx.cs">
       <DependentUpon>List.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,9 +198,7 @@
     <Content Include="App_Config\Security\GlobalRoles.config" />
     <Content Include="App_Config\XamlSharp.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Img\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SC.Logic\SC.Logic.csproj">
       <Project>{93e00ae4-44bb-40b1-8f6e-a31a2f05a855}</Project>

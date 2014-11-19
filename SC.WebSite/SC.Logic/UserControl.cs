@@ -12,6 +12,7 @@ namespace SC.Logic
         {
 
         }
+
         #region 属性
         /// <summary>
         /// 获取对包含服务器控件的 CommonPage 实例的引用

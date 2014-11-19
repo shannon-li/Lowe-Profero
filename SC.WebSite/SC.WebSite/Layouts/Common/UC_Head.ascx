@@ -2,68 +2,60 @@
 <div class="navigation-bar">
     <div class="logo">
         <a href="/">
-            <img style="height: 50px;" src="/media/398965/logo.png"></a>
+            <sc:Image Field="Logo Picture" runat="server" Item="<%#Page.HomeItem %>" />
+        </a>
     </div>
     <div class="nav-location-out"></div>
     <div class="location-dropdown uk-hidden-small uk-hidden-medium">
         <div class="location-dropdown-content">
-            <div class="location">UK</div>
+            <div class="location"><%=Page.AreaItem.Name %></div>
             <div class="location-dropdown-sub-top-arrow"></div>
             <div class="location-dropdown-sub">
-                <input type="hidden" value="en" class="currentOfficeLang">
+                <%
+                    if (this.AreaItemList != null && this.AreaItemList.Length > 0)
+                    {
+                        foreach (Sitecore.Data.Items.Item item in this.AreaItemList)
+                        {
+                            Sitecore.Data.Items.Item[] childList = this.Get_AreaChildList(item);
+                            bool isHasChild = (childList != null && childList.Length > 0) ? true : false;
+                            string http = Request.Url.ToString();
+                %>
                 <div class="location-block">
-                    <a href="http://www.loweprofero.com/en/our-work" class="location-name">Global
-                               
-                        <input type="hidden" value="en" class="currentLang">
-                    </a>
-                </div>
-                <div class="location-block">
-                    <a href="http://newyork.loweprofero.com/en/our-work" class="location-name">North America
-                               
-                        <input type="hidden" value="en" class="currentLang">
-                    </a>
-                </div>
-                <div class="location-block">
-                    <a href="http://london.loweprofero.com/en/our-work" class="location-name">UK
-                               
-                        <input type="hidden" value="en" class="currentLang">
-                    </a>
-                </div>
-                <div class="location-block">
-                    <div class="location-name">APAC</div>
+                    <%
+                            if (isHasChild)
+                            {
+                    %>
+                    <div class="location-name"><%=item.Name %></div>
                     <div class="sub-location-block">
-                        <a href="http://singapore.loweprofero.com/en/our-work">Singapore
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
-                        <a href="http://beijing.loweprofero.com/en/our-work">Beijing
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
-                        <a href="http://shanghai.loweprofero.com/en/our-work">Shanghai
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
-                        <a href="http://seoul.loweprofero.com/en/our-work">Korea
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
-                        <a href="http://sydney.loweprofero.com/en/our-work">Australia
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
-                        <a href="http://tokyo.loweprofero.com/ja/our-work">Japan
-                                       
-                            <input type="hidden" value="ja" class="currentLang">
-                        </a>
-                        <a href="http://hongkong.loweprofero.com/en/our-work">Hong Kong
-                                       
-                            <input type="hidden" value="en" class="currentLang">
-                        </a>
+                        <%
+                                foreach (Sitecore.Data.Items.Item childItem in childList)
+                                {                                     
+                        %><a href="<%=http.Replace(http.Split('.')[0],"http://"+ childItem["HttpName"]) %>" class="location-name"><%=childItem.Name %></a><%
+                                }
+                        %>
                     </div>
+                    <%
+                            }
+                            else
+                            {
+                    %><a href="<%=http.Replace(http.Split('.')[0],"http://"+ item["HttpName"]) %>" class="location-name"><%=item.Name %></a><%
+                            }
+                    %>
                 </div>
+                <%
+                        }
+                    }
+                %>
             </div>
         </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".sub-location-block").show();
+                $(".location-dropdown-content .location").click(function () {
+                    $(".location-dropdown-sub").toggle();
+                });
+            });
+        </script>
     </div>
     <a href="/en/our-work" class="mobile-title uk-hidden-large">Work</a>
     <div class="links uk-hidden-small uk-hidden-medium">

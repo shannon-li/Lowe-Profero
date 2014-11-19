@@ -7,62 +7,49 @@ using System.Web.UI.WebControls;
 using Sitecore;
 using System.Text;
 using Sitecore.Links;
-using Sitecore.Data.Items;
 using SC.Logic;
+
 namespace SC.WebSite.Layouts.Common
 {
-    public partial class UC_Head : System.Web.UI.UserControl
+    public partial class UC_Head : SC.Logic.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
             GetNav();
+            Load_AreaList();
         }
 
-        private void SelectArea()
+        /// <summary>
+        /// 加载区域列表
+        /// </summary>
+        private void Load_AreaList()
         {
-            Item Home = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath.ToString());
-            if (Home != null)
-            {
-                StringBuilder builder = new StringBuilder();
-                if (Home.Children.Count > 0)
-                {
-                    builder.Append("<ul>");
-                    for (int i = 0; i < Home.Children.Count; i++)
-                    {
-                        if (Home.Children[i].Fields["IsOption"] != null)
-                        {
-                            builder.Append("");
-                            if (Home.Children[i].Fields["IsOption"].Value == "1")
-                            {
-                                builder.Append("<li> <a href='" + LinkManager.GetItemUrl(Home.Children[i]) + "'>" + Home.Children[i].Name + "</li>");
-                            }
-                            else
-                            {
-                                builder.Append("<li>" + Home.Children[i].Name + "</li>");
-                            }
-
-                        }
-                    }
-                    builder.Append("</ul>");
-                }
-                // divNav.InnerHtml = builder.ToString();
-
-            }
-
+            this.AreaItemList = Page.HomeItem.Axes.SelectItems("./*[@@templatename='Area']");
         }
+
+        /// <summary>
+        /// 获取当前Item的ChildItem
+        /// </summary>
+        /// <param name="currentItem"></param>
+        /// <returns></returns>
+        protected Sitecore.Data.Items.Item[] Get_AreaChildList(Sitecore.Data.Items.Item currentItem)
+        {
+            return currentItem.Axes.SelectItems("./*[@@templatename='Area']");
+        }
+
         /// <summary>
         /// 获取导航数据
         /// </summary>
         private void GetNav()
         {
 
-            Item AreaItem =Page.AreaItem;
-            Item Home = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath.ToString());
+            Sitecore.Data.Items.Item AreaItem = Page.AreaItem;
+            Sitecore.Data.Items.Item Home = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath.ToString());
             StringBuilder builder = new StringBuilder();
             if (AreaItem != null || Home != null)
             {
-                
+
                 builder.Append("<ul>");
                 for (int i = 0; i < AreaItem.Children.Count; i++)
                 {
@@ -83,20 +70,13 @@ namespace SC.WebSite.Layouts.Common
             }
             literNAV.Text = builder.ToString();
         }
-        /// <summary>
-        /// 获取对包含服务器控件的 LogicPage 实例的引用
-        /// </summary>
-        public new LogicPage Page
+
+        #region 属性
+        protected Sitecore.Data.Items.Item[] AreaItemList
         {
-            get
-            {
-                LogicPage page = base.Page as LogicPage;
-                if (page == null)
-                {
-                    throw new InvalidOperationException("A UserControl can be used only with content pages that derive from SC.Logic.LogicPage");
-                }
-                return page;
-            }
+            get;
+            set;
         }
+        #endregion
     }
 }

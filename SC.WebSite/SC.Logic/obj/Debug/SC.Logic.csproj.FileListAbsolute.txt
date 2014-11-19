@@ -3,4 +3,3 @@ E:\GitHub\Lowe-Profero\SC.WebSite\SC.Logic\bin\Debug\SC.Logic.pdb
 E:\GitHub\Lowe-Profero\SC.WebSite\SC.Logic\bin\Debug\Sitecore.Kernel.dll
 E:\GitHub\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.dll
 E:\GitHub\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.pdb
-E:\GitHub\Lowe-Profero\SC.WebSite\SC.Logic\obj\Debug\SC.Logic.csprojResolveAssemblyReference.cache
